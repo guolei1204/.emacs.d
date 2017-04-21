@@ -28,6 +28,12 @@
   "run current buffer"
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
+(defun gocompile ()
+  "compile current buffer"
+  (interactive)
+  (compile (concat "go build " (buffer-file-name))))
+
+
 
 (defun go-mode-setup()
   (go-eldoc-setup)
@@ -35,7 +41,8 @@
   (add-hook 'brefore-save-hook 'gofmt-before-save)
   (local-set-key (kbd "M-.") 'godef-jump)
   (local-set-key (kbd "M-*") 'pop-tag-mark)
-  (local-set-key (kbd "C-c C-c") 'gorun)
+  (local-set-key (kbd "C-c C-r") 'gorun)
+  (lcoal-set-key (kbd "C-c C-c") 'gocompile)
   )
 (add-hook 'go-mode-hook 'go-mode-setup)
 
