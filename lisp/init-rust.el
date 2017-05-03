@@ -44,7 +44,6 @@
           '(lambda ()
              (setq racer-cmd (concat (getenv "HOME") "/.cargo/bin/racer"))
              (setq racer-rust-src-path (concat (getenv "HOME") "/.rust/src"))
-             (local-set-key (kbd "TAB") #'company-indent-or-complete-common)
              (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)
              (electric-pair-mode 1)))
 
