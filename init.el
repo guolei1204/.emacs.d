@@ -122,9 +122,6 @@
 (require 'init-folding)
 (require 'init-dash)
 (require 'init-ledger)
-;; rust config
-;;(require 'init-rust)
-;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
 (require-package 'lua-mode)
