@@ -3,6 +3,8 @@
 /auto-save-list
 /.session
 /session.*
+/custom.el
+/.custom.el
 *.elc
 CVS
 .svn
@@ -27,6 +29,8 @@ site-lisp/package/
 /.achievements
 /.bookmarks.el
 /history
+/.historian
+/.uptimes.el
 /helm-adaptive-history
 /thumbs/
 /emms/
